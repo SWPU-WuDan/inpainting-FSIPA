@@ -16,6 +16,7 @@ python run.py
 There are several arguments that can be used, which are
 ```
 --data_root +str #where to get the images for training/testing
+--edge_root+str #where to get the smooth images for training/testing
 --mask_root +str #where to get the masks for training/testing
 --model_save_path +str #where to save the model during training
 --result_save_path +str #where to save the inpainting results during testing
