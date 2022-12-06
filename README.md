@@ -8,6 +8,15 @@ Numpy == 1.14.3
 Scikit-image (skimage) == 0.13.1
 visdom == 0.1.8.9
 lpips ==0.1.4
+## Dataset Preparation
+We use Places2, CelebA and Paris Street-View datasets. To train a model on the full dataset, download datasets from official websites.
+
+Our model is trained on the irregular mask dataset provided by Liu et al. You can download publically available Irregular Mask Dataset from their website.
+
+For Structure image of datasets, we follow the structure flow and utlize the RTV smooth method.Run generation function data/Matlab/generate_structre_images.m in your matlab. For example, if you want to generate smooth images for Places2, you can run the following code:
+
+generate_structure_images("path to Places2 dataset root", "path to output folder");
+
 ## Running the program
 To perform training or testing, use 
 ```
