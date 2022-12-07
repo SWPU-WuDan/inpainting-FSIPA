@@ -72,7 +72,7 @@ python run.py --finetune --g_path path-to-trained-generator --d_path path-to-tra
 python run.py --test
 ```
 4. Evalue the model results
-5. ```
+ ```
 python quality_test.py
 
 ```
