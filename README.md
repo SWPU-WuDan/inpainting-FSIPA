@@ -9,7 +9,7 @@ Scikit-image (skimage) == 0.13.1
 visdom == 0.1.8.9
 lpips ==0.1.4
 ## Dataset Preparation
-We use ！[Places2](http://places2.csail.mit.edu/download.html), CelebA and Paris Street-View datasets. To train a model on the full dataset, download datasets from official websites.
+We use [Places2](http://places2.csail.mit.edu/download.html), [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) and [Paris Street-View datasets](https://github.com/pathak22/context-encoder). To train a model on the full dataset, download datasets from official websites.
 
 Our model is trained on the irregular mask dataset provided by Liu et al. You can download publically available Irregular Mask Dataset from their website.
 
