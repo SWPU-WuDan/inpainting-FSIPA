@@ -9,11 +9,11 @@ Scikit-image (skimage) == 0.13.1
 visdom == 0.1.8.9
 lpips ==0.1.4
 ## Dataset Preparation
-We use [Places2](http://places2.csail.mit.edu/download.html), [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) and [Paris Street-View datasets](https://github.com/pathak22/context-encoder). To train a model on the full dataset, download datasets from official websites.
+We use [Places2](http://places2.csail.mit.edu/download.html), [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) and [Paris Street-View datasets](https://github.com/pathak22/context-encoder). Except Places2, train a model on the full dataset, download datasets from official websites.
 
-Our model is trained on the irregular mask dataset provided by Liu et al. You can download publically available Irregular Mask Dataset from their website.
+Our model is trained on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download publically available Irregular Mask Dataset from their [website](https://nv-adlr.github.io/publication/partialconv-inpainting).
 
-For Structure image of datasets, we follow the structure flow and utlize the RTV smooth method.Run generation function data/Matlab/generate_structre_images.m in your matlab. For example, if you want to generate smooth images for Places2, you can run the following code:
+For Structure image of datasets, we follow the [structure flow](https://github.com/RenYurui/StructureFlow) and utlize the [RTV smooth method](http://www.cse.cuhk.edu.hk/~leojia/projects/texturesep/).Run generation function [data/Matlab/generate_structre_images.m](https://github.com/KumapowerLIU/Rethinking-Inpainting-MEDFE/blob/master/data/Matlab/generate_structure_images.m) in your matlab. For example, if you want to generate smooth images for Places2, you can run the following code:
 ```
 generate_structure_images("path to Places2 dataset root", "path to output folder");
 ```
