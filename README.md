@@ -47,6 +47,14 @@ to test the network
 ```
 python run.py --data_root data --mask_root mask --g_path checkpoints/g_10000.pth --test --mask_mode 2
 ```
+to evalue the results
+```
+python quality_test.py
+```
+Before perform evalue , to t two arguments firstly:
+```
+--real_path +str #where to get the groundtruth image
+--fake_path+str #where to get the generated image
 ## Training procedure
 To fully exploit the performance of the network, we suggest to use the following training procedure, in specific
 1. Train the network, i.e. use the command
@@ -60,4 +68,9 @@ python run.py --finetune --g_path path-to-trained-generator --d_path path-to-tra
 3. Test the model
 ```
 python run.py --test
+```
+4. Evalue the model results
+5. ```
+python quality_test.py
+
 ```
