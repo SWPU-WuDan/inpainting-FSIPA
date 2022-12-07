@@ -55,6 +55,8 @@ Before perform evalue , to t two arguments firstly:
 ```
 --real_path +str #where to get the groundtruth image
 --fake_path+str #where to get the generated image
+```
+
 ## Training procedure
 To fully exploit the performance of the network, we suggest to use the following training procedure, in specific
 1. Train the network, i.e. use the command
