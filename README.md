@@ -56,6 +56,9 @@ Before perform evalue , to t two arguments firstly:
 --real_path +str #where to get the groundtruth image
 --fake_path+str #where to get the generated image
 ```
+## Pretrained model
+All the descriptions below are under the assumption that parameters are consistent with our paper,and we will up pre-trained model later.
+We strongly encourage the users to retrain the models if they are used for academic purpose, to ensure fair comparisons (which has been always desired). Achieving a good performance using the current version of code should not be difficult
 
 ## Training procedure
 To fully exploit the performance of the network, we suggest to use the following training procedure, in specific
